@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procesador de Datos Demográficos</title>
+
+    <!-- conexión Favicon Pestaña Navegador -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Enlace a nuestra hoja de estilos CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Enlace a Iconos Font Awesome -->
+    <script src="https://kit.fontawesome.com/42774e4b93.js" crossorigin="anonymous"></script>
+
+    <!-- Enlace a Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arbutus&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Geostar&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+   <!-- Carga model-viewer -->
+   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+
+</head>
+<body>
+
+<model-viewer
+  src="https://raw.githubusercontent.com/CarlosVergaraDev/3d-assets/main/stylized_planet.glb"
+  alt="Planeta estilizado"
+  auto-rotate
+  camera-controls
+  exposure="1"
+  shadow-intensity="0.5"
+  style="width: 100%; height: 250px;">
+  
+</model-viewer>
+
+
+
+
+    <h1 class="principal-title">🗺️​ Procesador de Datos Demográficos</h1>
+
+    <!-- Contenedor principal de toda la aplicación -->
+    <main class="contenedor-principal">
+        
+        <!-- SECCIÓN 1: ENTRADA DE DATOS -->
+        <section id="seccion-entrada" class="seccion">
+            <h1>Registro de Edades</h1>
+            <p>Introduce 10 edades válidas (entre 1 y 120 años).</p>
+            
+            <!-- Título que muestra el progreso del ingreso de datos -->
+            <h2 id="titulo-progreso">Introduce la Edad 1 de 10</h2>
+            
+            <div class="grupo-input">
+                <!-- Campo para que el usuario escriba la edad -->
+                <input type="number" id="input-edad" placeholder="Ej: 25">
+                <!-- Botón para añadir la edad ingresada -->
+                <button id="btn-agregar">Agregar</button>
+            </div>
+            
+            <!-- Pequeño elemento para mostrar mensajes de error de validación -->
+            <p id="mensaje-error" class="error"></p>
+
+            <h3>Edades Ingresadas:</h3>
+            <!-- Contenedor donde mostraremos las edades ya añadidas como "píldoras" -->
+            <div id="contenedor-edades-ingresadas" class="edades-pildoras"></div>
+        </section>
+
+        <!-- SECCIÓN 2: VISUALIZACIÓN DE RESULTADOS (inicialmente oculta) -->
+        <section id="seccion-resultados" class="seccion seccion-oculta">
+            <h1>Dashboard de Resultados</h1>
+            <p>Análisis completo de las edades ingresadas.</p>
+
+            <!-- Contenedor para las métricas principales -->
+            <div class="dashboard-metricas">
+                <div class="tarjeta-metrica">
+                    <h4>Edad Mínima</h4>
+                    <p id="resultado-minima">-</p>
+                </div>
+                <div class="tarjeta-metrica">
+                    <h4>Edad Máxima</h4>
+                    <p id="resultado-maxima">-</p>
+                </div>
+                <div class="tarjeta-metrica">
+                    <h4>Promedio de Edad</h4>
+                    <p id="resultado-promedio">-</p>
+                </div>
+            </div>
+
+            <!-- Botón para reiniciar toda la aplicación -->
+            <button id="btn-reiniciar">Ingresar Nuevos Datos</button>
+        </section>
+
+    </main>
+
+    <footer> 
+        
+      <div class="info-proyecto" > <p> SENA - Evidencia: GA3-220501093-AA3-EV02 </p> <a href="https://github.com/CarlosVergaraDev/calculadora-figuras-geometricas/blob/master/README.md" target="_blank">README.md</a> </div>
+      <div class="desarrollador"> <p>Desarrollado por: Carlos Vergara</p>  <a href="https://github.com/CarlosVergaraDev" target="_blank"> <i class="fa-brands fa-square-github fa-shake"></i> </a> </div>   
+
+    </footer>
+    
+    <!-- Enlace a nuestro archivo JavaScript, al final del body para un mejor rendimiento -->
+    <script src="js/script.js"></script>
+</body>
+</html>
