@@ -181,7 +181,7 @@ footer{
 
 footer >div :nth-child(2){
   display: flex;
-  color: rgb(82, 151, 79);
+  color:rgb(8, 248, 0);
   padding-left: 2rem;
 }
 
@@ -202,22 +202,22 @@ footer >div :nth-child(2):hover {
 .desarrollador{ 
   display: flex;
   align-items: center;
-    font-family: "Funnel Sans", sans-serif;
+  font-family: "Funnel Sans", sans-serif;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 .desarrollador >a{
   text-decoration: none;
-}
+} 
 
-.fa-square-github {
+.fa-github {
   color: rgb(250, 255, 249);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
-.fa-square-github:hover{
-  color:rgb(121, 216, 117);
+.fa-github:hover{
+  color:rgb(8, 248, 0);
   transition: color 0.3s ease;
   
 }
