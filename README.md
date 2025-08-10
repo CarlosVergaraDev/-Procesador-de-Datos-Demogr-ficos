@@ -53,12 +53,22 @@ A diferencia de un formulario estático tradicional, esta interfaz progresiva me
 
 ## 📁 Estructura del Proyecto
 
-📦 estadisticas-edades
-├── index.html     # Estructura de la interfaz
-├── styles.css     # Estilos de la aplicación
-└── script.js      # Lógica principal del programa
+```bash
 
+├── README.md
+└── docs/
+    ├── index.html
+    ├── css/
+    │   └── style.css
+    ├── js/
+    │   └── script.js
+    ├── favicon.ico
+    ├── favicon-32x32.png
+    ├── favicon-16x16.png
+    ├── apple-touch-icon.png
+    ├── site.webmanifest
 
+```
 
 ---
 
@@ -94,4 +104,4 @@ A diferencia de un formulario estático tradicional, esta interfaz progresiva me
 
 ## 👨‍💻 Autor
 
-Desarrollado como práctica de fundamentos de desarrollo web usando **JS**, **HTML5** y **CSS3**.
+Desarrollado por Carlos Vergara, como práctica de fundamentos de desarrollo web usando **JS**, **HTML5** y **CSS3**.
